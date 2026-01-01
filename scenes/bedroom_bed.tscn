@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://dyspwsi6ur3f7"]
+
+[ext_resource type="PackedScene" uid="uid://ubwf12vwflw7" path="res://glb_models/bedroom_bed.glb" id="1_08n5r"]
+[ext_resource type="Texture2D" uid="uid://pxic2dmfxgm1" path="res://textures/Fabric/fondo-textil-lino-marron-textura_53876-102651.png" id="2_s2noc"]
+[ext_resource type="Material" uid="uid://dixxmege53am4" path="res://materials/tv.tres" id="2_sibvo"]
+[ext_resource type="Material" uid="uid://cscdt6uvxa2im" path="res://materials/cushions.tres" id="4_1prbq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ndytb"]
+albedo_color = Color(0, 0.775441, 0.42841, 1)
+albedo_texture = ExtResource("2_s2noc")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sibvo"]
+size = Vector3(1.63275, 0.697784, 2.34885)
+
+[node name="bedroom_bed" instance=ExtResource("1_08n5r")]
+
+[node name="BedMain" parent="." index="0"]
+material_override = ExtResource("2_sibvo")
+
+[node name="BedCover" parent="BedMain" index="0"]
+material_override = SubResource("StandardMaterial3D_ndytb")
+
+[node name="BedMattress" parent="BedMain" index="1"]
+material_override = ExtResource("4_1prbq")
+
+[node name="PillowCylinder" parent="BedMain" index="2"]
+material_override = ExtResource("4_1prbq")
+
+[node name="PillowCylinder_001" parent="BedMain" index="3"]
+material_override = ExtResource("4_1prbq")
+
+[node name="PillowLarge" parent="BedMain" index="4"]
+material_override = ExtResource("4_1prbq")
+
+[node name="PillowLarge_001" parent="BedMain" index="5"]
+material_override = ExtResource("4_1prbq")
+
+[node name="PillowSmall" parent="BedMain" index="6"]
+material_override = ExtResource("4_1prbq")
+
+[node name="PillowSmall_001" parent="BedMain" index="7"]
+material_override = ExtResource("4_1prbq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0350647, 0.347, 0.106766)
+shape = SubResource("BoxShape3D_sibvo")

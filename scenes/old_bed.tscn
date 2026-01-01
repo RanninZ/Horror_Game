@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dcoo2q82kaltw"]
+
+[ext_resource type="PackedScene" uid="uid://0jyxpu01e0fd" path="res://glb_models/old_bed.glb" id="1_pqu68"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kb1v7"]
+size = Vector3(1, 0.428223, 1.93164)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tq1jm"]
+size = Vector3(0.809021, 0.867188, 0.144043)
+
+[node name="old_bed" instance=ExtResource("1_pqu68")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.327283, 0.0260796)
+shape = SubResource("BoxShape3D_kb1v7")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00326538, 0.857742, -0.914311)
+shape = SubResource("BoxShape3D_tq1jm")
