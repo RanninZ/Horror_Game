@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=4 uid="uid://brqw1147c3fkm"]
+[gd_scene load_steps=57 format=4 uid="uid://brqw1147c3fkm"]
 
 [ext_resource type="PackedScene" uid="uid://c07660d3s7mt0" path="res://scenes/stairs.tscn" id="1_d7po0"]
 [ext_resource type="Material" uid="uid://07ycst836xyg" path="res://materials/house_material.tres" id="1_qtlar"]
@@ -18,6 +18,8 @@
 [ext_resource type="PackedScene" uid="uid://dcoo2q82kaltw" path="res://scenes/old_bed.tscn" id="16_3ewhn"]
 [ext_resource type="PackedScene" uid="uid://dyspwsi6ur3f7" path="res://scenes/bedroom_bed.tscn" id="17_0fn05"]
 [ext_resource type="PackedScene" uid="uid://bc5pc68crmec5" path="res://scenes/door.tscn" id="18_82h1m"]
+[ext_resource type="PackedScene" uid="uid://cuxtjk8fe33fh" path="res://scenes/light_bulb.tscn" id="19_e5ov4"]
+[ext_resource type="PackedScene" uid="uid://lxwqayd0soqj" path="res://light_switch.tscn" id="20_ep1bp"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oopty"]
 resource_name = "Material.001"
@@ -301,91 +303,6 @@ albedo_texture = ExtResource("12_qcuhb")
 [sub_resource type="QuadMesh" id="QuadMesh_3853c"]
 
 [node name="House" type="Node3D"]
-
-[node name="OmniLight3D" type="Node3D" parent="."]
-
-[node name="OmniLight3D" type="OmniLight3D" parent="OmniLight3D"]
-light_energy = 5.0
-light_size = 0.575
-shadow_enabled = true
-
-[node name="OmniLight3D2" type="OmniLight3D" parent="OmniLight3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.18669, 2.71508, 1.33346)
-light_energy = 5.0
-light_size = 0.575
-shadow_enabled = true
-
-[node name="OmniLight3D3" type="OmniLight3D" parent="OmniLight3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.3836, 2.13129, 5.98629)
-light_energy = 5.0
-light_size = 0.575
-shadow_enabled = true
-
-[node name="OmniLight3D4" type="OmniLight3D" parent="OmniLight3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.7047, 2.13129, 5.98629)
-light_energy = 5.0
-light_size = 0.575
-shadow_enabled = true
-
-[node name="OmniLight3D5" type="OmniLight3D" parent="OmniLight3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.7047, 2.13129, 9.36957)
-light_energy = 5.0
-light_size = 0.575
-shadow_enabled = true
-
-[node name="OmniLight3D6" type="OmniLight3D" parent="OmniLight3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.7047, 2.13129, 1.31996)
-light_energy = 5.0
-light_size = 0.575
-shadow_enabled = true
-
-[node name="OmniLight3D7" type="OmniLight3D" parent="OmniLight3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.3567, 2.13129, 1.31996)
-light_energy = 1.222
-light_size = 0.575
-shadow_enabled = true
-
-[node name="OmniLight3D8" type="OmniLight3D" parent="OmniLight3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.6699, 2.16109, -3.57023)
-light_energy = 1.222
-light_size = 0.575
-shadow_enabled = true
-
-[node name="OmniLight3D9" type="OmniLight3D" parent="OmniLight3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9592, 1.62476, -10.3215)
-light_energy = 1.222
-light_size = 0.575
-shadow_enabled = true
-
-[node name="OmniLight3D10" type="OmniLight3D" parent="OmniLight3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0623, 1.61718, -9.90332)
-light_energy = 1.222
-light_size = 0.575
-shadow_enabled = true
-
-[node name="OmniLight3D11" type="OmniLight3D" parent="OmniLight3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.69379, 1.61718, -13.633)
-light_energy = 1.222
-light_size = 0.575
-shadow_enabled = true
-
-[node name="OmniLight3D12" type="OmniLight3D" parent="OmniLight3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.69379, 1.61718, 8.73239)
-light_energy = 1.222
-light_size = 0.575
-shadow_enabled = true
-
-[node name="OmniLight3D13" type="OmniLight3D" parent="OmniLight3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.952153, 1.61718, 8.73239)
-light_energy = 1.222
-light_size = 0.575
-shadow_enabled = true
-
-[node name="OmniLight3D14" type="OmniLight3D" parent="OmniLight3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.952153, 1.61718, -10.3139)
-light_energy = 1.222
-light_size = 0.575
-shadow_enabled = true
 
 [node name="meshes" type="Node3D" parent="."]
 
@@ -678,17 +595,43 @@ transform = Transform3D(-2.01072e-08, 0, 0.755, 0, 0.435, 0, -0.46, 0, -3.30021e
 [node name="old_bed" parent="furniture" instance=ExtResource("16_3ewhn")]
 transform = Transform3D(1.91, 0, 0, 0, 1.977, 0, 0, 0, 1.91, -3.34895, -9.05669, -19.1888)
 
-[node name="bedroom_bed" parent="." instance=ExtResource("17_0fn05")]
+[node name="bedroom_bed" parent="furniture" instance=ExtResource("17_0fn05")]
 transform = Transform3D(-0.0172349, 0, -1.97492, 0, 1.975, 0, 1.97492, 0, -0.0172349, 19.0132, -1.67431, -10.0124)
 
-[node name="door" parent="." instance=ExtResource("18_82h1m")]
+[node name="Doors" type="Node3D" parent="."]
+
+[node name="door" parent="Doors" instance=ExtResource("18_82h1m")]
 transform = Transform3D(-3.19093e-08, 0, 0.73, 0, 0.73, 0, -0.73, 0, -3.19093e-08, 1.85258, 0, 13.3899)
 
-[node name="door2" parent="." instance=ExtResource("18_82h1m")]
+[node name="door2" parent="Doors" instance=ExtResource("18_82h1m")]
 transform = Transform3D(-3.16908e-08, 0, 0.725, 0, 0.725, 0, -0.725, 0, -3.16908e-08, 12.4517, 0, -0.32873)
 
-[node name="door5" parent="." instance=ExtResource("18_82h1m")]
+[node name="door5" parent="Doors" instance=ExtResource("18_82h1m")]
 transform = Transform3D(-3.16908e-08, 0, 0.725, 0, 0.725, 0, -0.725, 0, -3.16908e-08, 12.4517, 0, -6.14613)
 
-[node name="door4" parent="." instance=ExtResource("18_82h1m")]
+[node name="door4" parent="Doors" instance=ExtResource("18_82h1m")]
 transform = Transform3D(0.725, 0, 0, 0, 0.725, 0, 0, 0, 0.725, 0.100361, 0, -9.56559)
+
+[node name="Light" type="Node3D" parent="."]
+
+[node name="light_bulb" parent="Light" instance=ExtResource("19_e5ov4")]
+transform = Transform3D(0.37, 0, 0, 0, 0.37, 0, 0, 0, 0.37, 0, 3.41362, 0)
+
+[node name="light_bulb6" parent="Light" instance=ExtResource("19_e5ov4")]
+transform = Transform3D(0.37, 0, 0, 0, 0.37, 0, 0, 0, 0.37, -1.94402, 3.41362, -7.9943)
+
+[node name="light_bulb4" parent="Light" instance=ExtResource("19_e5ov4")]
+transform = Transform3D(0.37, 0, 0, 0, 0.37, 0, 0, 0, 0.37, 13.4455, 3.41362, -3.1483)
+
+[node name="light_bulb5" parent="Light" instance=ExtResource("19_e5ov4")]
+transform = Transform3D(0.37, 0, 0, 0, 0.37, 0, 0, 0, 0.37, 15.3675, 3.41362, -10.0727)
+
+[node name="light_bulb3" parent="Light" instance=ExtResource("19_e5ov4")]
+transform = Transform3D(0.368191, 0, -0.0365427, 0, 0.37, 0, 0.0365427, 0, 0.368191, 5.79227, 3.41362, 7.08443)
+
+[node name="light_bulb2" parent="Light" instance=ExtResource("19_e5ov4")]
+transform = Transform3D(0.37, 0, 0, 0, 0.37, 0, 0, 0, 0.37, 16.8095, 3.41362, 6.13997)
+
+[node name="light_switch" parent="." node_paths=PackedStringArray("light_bulb") instance=ExtResource("20_ep1bp")]
+transform = Transform3D(-0.485, 0, -4.24e-08, 0, 0.485, 0, 4.24e-08, 0, -0.485, 3.69481, 0.759194, 12.6262)
+light_bulb = NodePath("../Light/light_bulb3")
