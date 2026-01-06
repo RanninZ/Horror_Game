@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=4 uid="uid://brqw1147c3fkm"]
+[gd_scene load_steps=61 format=4 uid="uid://brqw1147c3fkm"]
 
 [ext_resource type="PackedScene" uid="uid://c07660d3s7mt0" path="res://scenes/stairs.tscn" id="1_d7po0"]
 [ext_resource type="Material" uid="uid://07ycst836xyg" path="res://materials/house_material.tres" id="1_qtlar"]
@@ -21,6 +21,9 @@
 [ext_resource type="PackedScene" uid="uid://cuxtjk8fe33fh" path="res://scenes/light_bulb.tscn" id="19_e5ov4"]
 [ext_resource type="PackedScene" uid="uid://lxwqayd0soqj" path="res://light_switch.tscn" id="20_ep1bp"]
 [ext_resource type="PackedScene" uid="uid://ds5rguynrp6by" path="res://scenes/lamp.tscn" id="21_57tf3"]
+[ext_resource type="PackedScene" uid="uid://dwvftfar2xfhm" path="res://scenes/cabinet_bathroom.tscn" id="22_de74l"]
+[ext_resource type="PackedScene" uid="uid://bgya7p1glnxxn" path="res://scenes/bathtub.tscn" id="23_qrght"]
+[ext_resource type="PackedScene" uid="uid://13m52bsqcrvk" path="res://scenes/toilet.tscn" id="24_r8noe"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oopty"]
 resource_name = "Material.001"
@@ -659,3 +662,12 @@ light_bulb = NodePath("../Light/light_bulb2")
 
 [node name="lamp" parent="." instance=ExtResource("21_57tf3")]
 transform = Transform3D(1.705, 0, 0, 0, 1.705, 0, 0, 0, 1.705, -1.27029, -8.69168, -14.3937)
+
+[node name="cabinet_bathroom" parent="." instance=ExtResource("22_de74l")]
+transform = Transform3D(2.64, 0, 0, 0, 1.455, 0, 0, 0, 2.195, -3.0281, -1.59274, -14.1524)
+
+[node name="bathtub" parent="." instance=ExtResource("23_qrght")]
+transform = Transform3D(-1.01848e-07, 0, 2.33, 0, 2.33, 0, -2.33, 0, -1.01848e-07, -5.66115, -1.74777, -9.98599)
+
+[node name="toilet" parent="." instance=ExtResource("24_r8noe")]
+transform = Transform3D(-2.715, 0, -4.09954e-07, 0, 2.715, 0, 4.09954e-07, 0, -2.715, -2.25087, -1.66969, -6.97263)
