@@ -7,9 +7,9 @@ extends Node3D
 
 func _ready():
 	if !on:
-		light_bulb.get_node("Cylinder_001").material_override = off_mat
+		light_bulb.get_node("Cylinder").material_override = off_mat
 	if on:
-		light_bulb.get_node("Cylinder_001").material_override = on_mat
+		light_bulb.get_node("Cylinder").material_override = on_mat
 	light_bulb.get_node("OmniLight3D").visible = on
 
 
@@ -18,9 +18,9 @@ func toggle_light():
 	if on: 
 		$on.visible = true
 		$off.visible = false
-		light_bulb.get_node("Cylinder_001").material_override = on_mat
+		light_bulb.get_node("Cylinder").material_override = on_mat
 	if !on: 
 		$on.visible = false
 		$off.visible = true
-		light_bulb.get_node("Cylinder_001").material_override = off_mat
+		light_bulb.get_node("Cylinder").material_override = off_mat
 	light_bulb.get_node("OmniLight3D").visible = on

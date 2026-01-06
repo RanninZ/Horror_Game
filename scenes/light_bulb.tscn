@@ -3,7 +3,6 @@
 [ext_resource type="Material" uid="uid://ccjq3e1wavw3y" path="res://materials/latch.tres" id="2_e3e1c"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vthir"]
-emission_enabled = true
 emission = Color(1, 0.936965, 0.671528, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8fbd7"]
@@ -75,6 +74,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_e2q7b")
 
 [node name="light_bulb" type="Node3D"]
+transform = Transform3D(0.999938, 0.011135, 0, -0.011135, 0.999938, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="Cylinder" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.889028, 0, 0, 0, 0.444092, 0, 0, 0, 0.863522, 0, 1.03524, 0)
@@ -91,6 +91,6 @@ mesh = SubResource("ArrayMesh_63k3n")
 skeleton = NodePath("")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0348244, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000521336, -0.0816412, 0)
 shadow_enabled = true
 omni_range = 15.0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=4 uid="uid://brqw1147c3fkm"]
+[gd_scene load_steps=58 format=4 uid="uid://brqw1147c3fkm"]
 
 [ext_resource type="PackedScene" uid="uid://c07660d3s7mt0" path="res://scenes/stairs.tscn" id="1_d7po0"]
 [ext_resource type="Material" uid="uid://07ycst836xyg" path="res://materials/house_material.tres" id="1_qtlar"]
@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://bc5pc68crmec5" path="res://scenes/door.tscn" id="18_82h1m"]
 [ext_resource type="PackedScene" uid="uid://cuxtjk8fe33fh" path="res://scenes/light_bulb.tscn" id="19_e5ov4"]
 [ext_resource type="PackedScene" uid="uid://lxwqayd0soqj" path="res://light_switch.tscn" id="20_ep1bp"]
+[ext_resource type="PackedScene" uid="uid://ds5rguynrp6by" path="res://scenes/lamp.tscn" id="21_57tf3"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oopty"]
 resource_name = "Material.001"
@@ -604,7 +605,7 @@ transform = Transform3D(-0.0172349, 0, -1.97492, 0, 1.975, 0, 1.97492, 0, -0.017
 transform = Transform3D(-3.19093e-08, 0, 0.73, 0, 0.73, 0, -0.73, 0, -3.19093e-08, 1.85258, 0, 13.3899)
 
 [node name="door2" parent="Doors" instance=ExtResource("18_82h1m")]
-transform = Transform3D(-3.16908e-08, 0, 0.725, 0, 0.725, 0, -0.725, 0, -3.16908e-08, 12.4517, 0, -0.32873)
+transform = Transform3D(0.00862957, 0, -0.724949, 0, 0.725, 0, 0.724949, 0, 0.00862957, 12.4517, 0, -0.32873)
 
 [node name="door5" parent="Doors" instance=ExtResource("18_82h1m")]
 transform = Transform3D(-3.16908e-08, 0, 0.725, 0, 0.725, 0, -0.725, 0, -3.16908e-08, 12.4517, 0, -6.14613)
@@ -618,10 +619,10 @@ transform = Transform3D(0.725, 0, 0, 0, 0.725, 0, 0, 0, 0.725, 0.100361, 0, -9.5
 transform = Transform3D(0.37, 0, 0, 0, 0.37, 0, 0, 0, 0.37, 0, 3.41362, 0)
 
 [node name="light_bulb6" parent="Light" instance=ExtResource("19_e5ov4")]
-transform = Transform3D(0.37, 0, 0, 0, 0.37, 0, 0, 0, 0.37, -1.94402, 3.41362, -7.9943)
+transform = Transform3D(0.37, 0, 0, 0, 0.37, 0, 0, 0, 0.37, -1.94402, 3.41362, -10.0491)
 
 [node name="light_bulb4" parent="Light" instance=ExtResource("19_e5ov4")]
-transform = Transform3D(0.37, 0, 0, 0, 0.37, 0, 0, 0, 0.37, 13.4455, 3.41362, -3.1483)
+transform = Transform3D(0.37, 0, 0, 0, 0.37, 0, 0, 0, 0.37, 17.3826, 3.41362, -3.1483)
 
 [node name="light_bulb5" parent="Light" instance=ExtResource("19_e5ov4")]
 transform = Transform3D(0.37, 0, 0, 0, 0.37, 0, 0, 0, 0.37, 15.3675, 3.41362, -10.0727)
@@ -635,3 +636,26 @@ transform = Transform3D(0.37, 0, 0, 0, 0.37, 0, 0, 0, 0.37, 16.8095, 3.41362, 6.
 [node name="light_switch" parent="." node_paths=PackedStringArray("light_bulb") instance=ExtResource("20_ep1bp")]
 transform = Transform3D(-0.485, 0, -4.24e-08, 0, 0.485, 0, 4.24e-08, 0, -0.485, 3.69481, 0.759194, 12.6262)
 light_bulb = NodePath("../Light/light_bulb3")
+
+[node name="light_switch2" parent="." node_paths=PackedStringArray("light_bulb") instance=ExtResource("20_ep1bp")]
+transform = Transform3D(-2.12e-08, 0, 0.485, 0, 0.485, 0, -0.485, 0, -2.12e-08, -5.60294, 0.759194, 5.07015)
+light_bulb = NodePath("../Light/light_bulb")
+
+[node name="light_switch5" parent="." node_paths=PackedStringArray("light_bulb") instance=ExtResource("20_ep1bp")]
+transform = Transform3D(-2.12e-08, 0, -0.485, 0, 0.485, 0, 0.485, 0, -2.12e-08, -0.243765, 0.558659, -8.02717)
+light_bulb = NodePath("../Light/light_bulb6")
+
+[node name="light_switch3" parent="." node_paths=PackedStringArray("light_bulb") instance=ExtResource("20_ep1bp")]
+transform = Transform3D(-0.485, 0, -4.24e-08, 0, 0.485, 0, 4.24e-08, 0, -0.485, 16.1643, 0.759194, -0.567241)
+light_bulb = NodePath("../Light/light_bulb4")
+
+[node name="light_switch4" parent="." node_paths=PackedStringArray("light_bulb") instance=ExtResource("20_ep1bp")]
+transform = Transform3D(-0.485, 0, -4.24e-08, 0, 0.485, 0, 4.24e-08, 0, -0.485, 14.1677, 0.759194, -6.57489)
+light_bulb = NodePath("../Light/light_bulb5")
+
+[node name="light_switch6" parent="." node_paths=PackedStringArray("light_bulb") instance=ExtResource("20_ep1bp")]
+transform = Transform3D(0.485, 0, 0, 0, 0.485, 0, 0, 0, 0.485, 14.1677, 0.759194, 0.280205)
+light_bulb = NodePath("../Light/light_bulb2")
+
+[node name="lamp" parent="." instance=ExtResource("21_57tf3")]
+transform = Transform3D(1.705, 0, 0, 0, 1.705, 0, 0, 0, 1.705, -1.27029, -8.69168, -14.3937)
